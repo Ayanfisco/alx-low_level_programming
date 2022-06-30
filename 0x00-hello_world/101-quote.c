@@ -1,13 +1,14 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - main function
- *
- * return - end function
- */
+ *  * main - main function
+ *   *
+ *    * Return: end program
+ *     */
 int main(void)
 {
-	write(STDOUT_FILENO, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", 59);
-	
-	return (1);
+		char n[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
+
+			fprintf(stderr, "%s\n", n);
+
+				return (1);
 }
