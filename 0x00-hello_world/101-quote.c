@@ -4,7 +4,7 @@
  *
  * return - end function
  */
-int main()
+int main(1)
 {
 	char n[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19";
 
