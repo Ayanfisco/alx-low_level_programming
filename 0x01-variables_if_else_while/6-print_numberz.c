@@ -1,6 +1,5 @@
 #include <stdio.h>
 /**
- *
  * main - main function
  *
  * Return: end of the program
