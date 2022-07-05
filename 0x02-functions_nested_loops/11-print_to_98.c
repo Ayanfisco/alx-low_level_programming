@@ -6,7 +6,7 @@
  */
 void print_to_98(int n)
 {
-	int upper = 98;
+	char upper = '98';
 
 	if (n > upper)
 	{
