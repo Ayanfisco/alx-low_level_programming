@@ -6,7 +6,7 @@
  */
 void print_to_98(int n)
 {
-	int upper = '98';
+	int upper = 98;
 
 	if (n > upper)
 	{
@@ -14,12 +14,12 @@ void print_to_98(int n)
 		{
 			if (n != upper)
 			{
-				_putchar(n);
+				_putchar(n + '0');
 				_putchar(',');
 			}
 			else
 			{
-				_putchar(n);
+				_putchar(n + '0');
 			}
 			n--;
 		}
@@ -30,12 +30,12 @@ void print_to_98(int n)
 		{
 			if (n != upper)
 			{
-				_putchar(n);
+				_putchar(n + '0');
 				_putchar(',');
 			}
 			else
 			{
-				_putchar(n);
+				_putchar(n + '0');
 			}
 			n++;
 		}
