@@ -4,15 +4,14 @@
  *
  * Return: end of the program
  */
-int main(void)
+void print_alphabet(void)
 {
-	char string[8] = "_putchar";
-	int n = 0;
+	char a = 'a';
 
-	while (n < 8)
+	while (a <= 'z')
 	{
-		_putchar(string[n]);
-		++n;
+		_putchar(a);
+		++a;
 	}
 
 	_putchar(10);
