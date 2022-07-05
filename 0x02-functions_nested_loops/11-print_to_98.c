@@ -31,7 +31,7 @@ void print_to_98(int n)
 			if (n != upper)
 			{
 				_putchar(n);
-				_putchar(',';
+				_putchar(',');
 			}
 			else
 			{
@@ -40,5 +40,5 @@ void print_to_98(int n)
 			n++;
 		}
 	}
-	putchar(10);
+	_putchar(10);
 }
