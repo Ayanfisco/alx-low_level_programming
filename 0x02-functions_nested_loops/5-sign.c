@@ -2,7 +2,7 @@
 /**
  * print_sign - function
  *
- * @: The character to evaluate
+ * @n: The character to evaluate
  *
  * Return: Get 1 if c is positive,
  * get 0 if it's 0, and
