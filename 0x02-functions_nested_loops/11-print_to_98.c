@@ -14,11 +14,12 @@ void print_to_98(int n)
 		{
 			if (n != upper)
 			{
-				printf("%d%s", n, ", ");
+				_putchar(n);
+				_putchar(',');
 			}
 			else
 			{
-				printf("%d", n);
+				_putchar(n);
 			}
 			n--;
 		}
@@ -29,11 +30,12 @@ void print_to_98(int n)
 		{
 			if (n != upper)
 			{
-				printf("%d%s", n, ", ");
+				_putchar(n);
+				_putchar(',';
 			}
 			else
 			{
-				printf("%d", n);
+				_putchar(n);
 			}
 			n++;
 		}
