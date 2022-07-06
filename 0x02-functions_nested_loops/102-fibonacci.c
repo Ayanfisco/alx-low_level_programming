@@ -6,21 +6,17 @@
  */
 int main(void)
 {
-	int i = 1;
-	long int  num1 = 0;
-	long int num2 = 1;
-	long int sumPrevTwo = 0;
-	long int sumEven = 0;
-	long int maxFibTerm = 4000000;
+	long int n, a = 1, b = 1, s;
 
-	while (num1 < maxFibTerm && num2 < maxFibTerm)
+	printf("%ld", a);
+	for (n = 1; n < 50; ++n)
 	{
-		sumPrevTwo = num1 + num2;
-		sumEven += (((sumPrevTwo % 2) == 0) ? sumPrevTwo : 0);
-		num1 = num2;
-		num2 = sumPrevTwo;
-		i++;
+		s = a + b;
+		printf(", %ld", s);
+		a = b;
+		b = s;
 	}
-	printf("%ld\n", sumEven);
+	putchar(10);
 	return (0);
 }
+	
