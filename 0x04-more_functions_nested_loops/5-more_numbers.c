@@ -1,23 +1,28 @@
 #include "main.h"
 /**
- * more_numbers - function that prints 10 times the numbers, from 0 to 14
+ * more_numbers - function that checks for uppercase character
+ * Return: 0
  */
 void more_numbers(void)
 {
-	int i = 1;
-	char j;
+	
+	int a = 0;
+	int b = 0;
 
-	while (i < 10)
+
+	while (b <= 9)
 	{
-		for (j = 0; j <= 14; j++)
+		while (a <= 14)
 		{
-			if (j > 9)
-			{
-				_putchar((j / 10) + '0');
-				_putchar((j % 10) + '0');
-			}
+			if (a > 9)
+				_putchar(a / 10 + '0');
+			_putchar(a % 10 + '0');
+			a++;
+
+		
 		}
-		_putchar(10);
-		i++;
+		_putchar('\n');
+		b++;
+		a = 0;
 	}
 }
