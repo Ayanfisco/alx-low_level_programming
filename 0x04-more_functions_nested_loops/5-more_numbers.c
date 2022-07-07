@@ -4,7 +4,6 @@
  */
 void more_numbers(void)
 {
-	
 	int a = 0;
 	int b = 0;
 
