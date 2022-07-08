@@ -18,7 +18,7 @@ int _isupper(int c)
 	}
 	else
 	{
-		boolean = 1;
+		boolean = 0;
 	}
 	return (boolean);
 }
