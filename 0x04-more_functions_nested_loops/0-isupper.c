@@ -2,9 +2,11 @@
 /**
  * _isupper -  function that checks for uppercase character.
  *
+ * Return: returns 0 or 1
+ *
  * @c: function parameter
  *
- * Return: returns 0 or 1
+ * Auth: Ojo Ayanfe
  */
 int _isupper(int c)
 {
