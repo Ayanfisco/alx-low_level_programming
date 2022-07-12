@@ -2,13 +2,15 @@
 /**
  * main - check the code for Holberton School students.
  *
- * Return: Always 0.
+ * @s: pointer of parameter
  */
-int main(void)
+void print_rev(char *s)
 {
-	char *str;
+	int length = 0;
 
-	str = "I do not fear computers. I fear the lack of them - Isaac Asimov";
-	print_rev(str);
-	return (0);
+	while (s[length] != '\0')
+		length++;
+	while (length > 0)
+		_putchar(s[--length]);
+	_putchar(10);
 }
