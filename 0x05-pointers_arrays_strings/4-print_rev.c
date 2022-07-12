@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - check the code for Holberton School students.
+ * print_rev - check the code for Holberton School students.
  *
  * @s: pointer of parameter
  */
