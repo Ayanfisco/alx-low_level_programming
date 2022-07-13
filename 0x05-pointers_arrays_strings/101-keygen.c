@@ -15,11 +15,11 @@ void randomPasswordGeneration(int N)
 	
 	srand((unsigned int)(time(NULL)));
 
-	char numbers[] = "0123456789";
+	int numbers[] = "0123456789";
 	char letter[] = "abcdefghijklmnoqprstuvwyzx";
 	char LETTER[] = "ABCDEFGHIJKLMNOQPRSTUYWVZX";
 	char symbols[] = "!@#$^&*?";
-	char password[N];
+	int password[N];
 
 	randomizer = rand() % 4;
 
