@@ -6,5 +6,13 @@
  */
 void print_number(int n)
 {
-	_putchar(n);
+	if(i/10!=0)
+	{
+		putchar(i%10);
+		printnumber((i-i%10)/10);
+	}
+	else if((i/10==0) && (i%10!=0) && (i>0))
+		putchar(i%10);
+	else if((i/10==0) && (i%10!=0) && (i<=0))
+		putchar(-i%10);
 }
