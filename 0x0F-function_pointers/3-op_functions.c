@@ -56,20 +56,20 @@ int op_div(int a, int b)
 	return (a / b);
 }
 /**
- *  * op_mod - function modulo
- *   *
- *    * @a: Parameter 1
- *     * @b: Parameter 2
- *      *
- *       * Return: Return the result of the operation
- *        */
+ * op_mod - function modulo
+ *
+ * @a: Parameter 1
+ * @b: Parameter 2
+ *
+ * Return: Return the result of the operation
+ */
 int op_mod(int a, int b)
 {
-		if (b == 0)
-				{
-							printf("Error\n");
-									exit(100);
-										}
+	if (b == 0)
+	{
+		printf("Error\n");
+		exit(100);
+	}
 
-			return (a % b);
+	return (a % b);
 }
