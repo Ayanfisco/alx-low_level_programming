@@ -40,32 +40,32 @@ void cp(char *file_from, char *file_to)
 		_error(98, file_from);
 	/* WRITE */
 	fd_write = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-							if (fd_write < 0)
-							{
-								close(fd_read);
-								_error(99, file_to);
-							}
-							do {
-								/* READ */
-								res_read = read(fd_read, buf, 1024);
-								if (res_read < 0)
-									_error(98, file_from);
-								/* WRITE */
-								res_write = write(fd_write, buf, res_read);
-								if (res_write < res_read)
-									_error(99, file_to);
-							}	while (res_write == 1024);
-							if (close(fd_read) < 0)
-							{
-								dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_read);
-																close(fd_write);
-																exit(100);
-							}
-							if (close(fd_write) < 0)
-							{
-								dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_write);
-								exit(100);
-							}
+	if (fd_write < 0)
+	{
+		close(fd_read);
+		_error(99, file_to);
+	}
+	do {
+		/* READ */
+		res_read = read(fd_read, buf, 1024);
+		if (res_read < 0)
+			_error(98, file_from);
+		/* WRITE */
+		res_write = write(fd_write, buf, res_read);
+		if (res_write < res_read)
+			_error(99, file_to);
+	}	while (res_write == 1024);
+	if (close(fd_read) < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_read);
+		close(fd_write);
+		exit(100);
+	}
+	if (close(fd_write) < 0)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d\n", fd_write);
+		exit(100);
+	}
 }
 /**
  * main - Copies the content of a file to another file.
